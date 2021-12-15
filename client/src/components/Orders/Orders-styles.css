@@ -1,0 +1,146 @@
+.orders {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.orders_content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.orders_content > h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.orders_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.order_single {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.order_details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.orders_date {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.orders_date > p {
+    color: orangered;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.order_amount {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.order_amount > p {
+    color: orangered;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.orders_id {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.orders_noOrders {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.orders_id > p {
+    color: orangered;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.orderItem {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.orderItem_description {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.orderItem_price {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.orderItem_title {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.orders_noUser {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .orderItem {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 250px;
+        min-width: 250px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .orders {
+        padding: 10px;
+    }
+
+    .orders_content {
+        width: 100%;
+    }
+
+    .orderItem_description {
+        display: none;
+    }
+
+    .orderItem_title {
+        margin-bottom: 5px;
+    }
+}

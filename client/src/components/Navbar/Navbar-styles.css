@@ -1,0 +1,132 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    /* background-color: #212529; */
+    background: linear-gradient(
+        to right,
+        pink,
+        rgba(255, 192, 203, 0.76),
+        #fff
+    );
+
+    color: orangered;
+}
+
+.navbar_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: c;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_toggle {
+    display: none;
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid orangered;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.navbar_toggle > p {
+    height: 3px;
+    width: 30px;
+    background-color: orangered;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.navbar_items {
+    display: flex;
+    list-style: none;
+}
+
+.navbar_item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.navbar_userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar_userName > p {
+    color: #000;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.navbar_auth {
+    font-weight: 600;
+    color: orangered;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar_contents {
+        flex-direction: column;
+    }
+
+    .navbar_toggle {
+        display: inline;
+    }
+
+    .navbar_items {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0;
+    }
+
+    .navbar_item {
+        margin: 10px 0px;
+    }
+
+    .navbar_show {
+        height: 100vh;
+        animation: navbarOpen 0.4s ease-in-out;
+    }
+
+    .navbar_hide {
+        height: 60px;
+        animation: navbarClose 0.4s ease-in-out;
+    }
+
+    .navbar_showItem {
+        height: 100%;
+        margin-top: 20px;
+        border-top: 2px solid #fff;
+    }
+
+    @keyframes navbarOpen {
+        from {
+            height: 60px;
+        }
+
+        to {
+            height: 100vh;
+        }
+    }
+
+    @keyframes navbarClose {
+        from {
+            height: 100vh;
+        }
+
+        to {
+            height: 60px;
+        }
+    }
+}
